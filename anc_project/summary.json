@@ -1,0 +1,142 @@
+{
+  "fs": 8000,
+  "duration": 5,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "baseline_seed": 42,
+  "baseline_taps": 32,
+  "baseline_mu": 0.001,
+  "update": "w += 2*mu*e*u",
+  "evaluation_seconds": [
+    4,
+    5
+  ],
+  "baseline": {
+    "mse_full": 0.0035165374406560704,
+    "mse_final": 0.002034642159208822,
+    "input_power_final": 0.7009123444049903,
+    "output_power_final": 0.002034642159208822,
+    "input_rms_final": 0.8372050790606745,
+    "output_rms_final": 0.04510700787248941,
+    "power_reduction_final_pct": 99.70971517687622,
+    "rms_reduction_final_pct": 94.61219132555927,
+    "attenuation_full_db": 23.12562314057591,
+    "attenuation_final_db": 25.371756696657158,
+    "floor_final": 0.001835227454104322
+  },
+  "sweep": [
+    {
+      "taps": 8,
+      "mu": 0.001,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.124962609871496,
+      "attenuation_sd_db": 0.07985588303550745,
+      "mse_mean": 0.0022114502706695313
+    },
+    {
+      "taps": 8,
+      "mu": 0.005,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.404640547337582,
+      "attenuation_sd_db": 0.07669838142101174,
+      "mse_mean": 0.0020734624161073203
+    },
+    {
+      "taps": 8,
+      "mu": 0.01,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.23142139097269,
+      "attenuation_sd_db": 0.08081387365476565,
+      "mse_mean": 0.00215782963102708
+    },
+    {
+      "taps": 8,
+      "mu": 0.05,
+      "finite_runs": 0,
+      "diverged_runs": 5,
+      "attenuation_mean_db": null,
+      "attenuation_sd_db": null,
+      "mse_mean": null
+    },
+    {
+      "taps": 16,
+      "mu": 0.001,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.57072264250808,
+      "attenuation_sd_db": 0.08226892413595281,
+      "mse_mean": 0.0019957095147108343
+    },
+    {
+      "taps": 16,
+      "mu": 0.005,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.547299413200317,
+      "attenuation_sd_db": 0.08759670238941505,
+      "mse_mean": 0.00200645412325414
+    },
+    {
+      "taps": 16,
+      "mu": 0.01,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 22.119639366390505,
+      "attenuation_sd_db": 6.54227262502421,
+      "mse_mean": 0.015001718102425768
+    },
+    {
+      "taps": 16,
+      "mu": 0.05,
+      "finite_runs": 0,
+      "diverged_runs": 5,
+      "attenuation_mean_db": null,
+      "attenuation_sd_db": null,
+      "mse_mean": null
+    },
+    {
+      "taps": 32,
+      "mu": 0.001,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.489375089538317,
+      "attenuation_sd_db": 0.08403968562301262,
+      "mse_mean": 0.0020334434343229346
+    },
+    {
+      "taps": 32,
+      "mu": 0.005,
+      "finite_runs": 5,
+      "diverged_runs": 0,
+      "attenuation_mean_db": 25.103709940564375,
+      "attenuation_sd_db": 0.07472512199656675,
+      "mse_mean": 0.002222294457747958
+    },
+    {
+      "taps": 32,
+      "mu": 0.01,
+      "finite_runs": 4,
+      "diverged_runs": 1,
+      "attenuation_mean_db": 0.36275054329488743,
+      "attenuation_sd_db": 25.728290389581524,
+      "mse_mean": 92.06786556324747
+    },
+    {
+      "taps": 32,
+      "mu": 0.05,
+      "finite_runs": 0,
+      "diverged_runs": 5,
+      "attenuation_mean_db": null,
+      "attenuation_sd_db": null,
+      "mse_mean": null
+    }
+  ]
+}
