@@ -1,6 +1,6 @@
 # LMS active noise cancellation simulation
 
-This project studies feedforward ANC with an ideal unity secondary path. It is a numerical model, not a physical loudspeaker demonstration. Run implementation before using its results in your term paper.
+This project studies feedforward ANC with an ideal unity secondary path. It is a numerical model, not a physical loudspeaker demonstration. 
 
 ## Run
 
@@ -50,11 +50,9 @@ Baseline is seed 42, 32 taps, mu 0.001, selected after the sweep showed instabil
 
 Script verifies a hand-sized LMS recursion using independent indexing, exact primary model leaves only independent noise, and baseline attenuates noise by over 10 dB. All runs are checked for nonfinite or runaway weights. No measurements are invented. Independent white noise is a modeling choice, not calibrated microphone noise. Results cannot establish real acoustic performance, spatial cancellation, perceptual quality, or robustness to an unknown secondary path.
 
-For paper, explain unity secondary path and reference-independent floor before interpreting results. Statistical summary uses five realizations; this small sample is not a broad robustness study. No step size or filter length is universally optimal.
+Statistical summary uses five realizations; this small sample is not a broad robustness study. No step size or filter length is universally optimal.
 
 ## Source leads for paper
-
-Verify and read relevant sections before citing:
 
 - B. Widrow et al., “Adaptive noise cancelling: Principles and applications,” Proceedings of the IEEE, vol. 63, no. 12, pp. 1692–1716, 1975. DOI: 10.1109/PROC.1975.10036. Author-hosted paper: https://isl-www.stanford.edu/~widrow/papers/j1975adaptivenoise.pdf
 - S. M. Kuo and D. R. Morgan, “Active noise control: A tutorial review,” Proceedings of the IEEE, vol. 87, no. 6, pp. 943–975, 1999. DOI: 10.1109/5.763310. https://ieeexplore.ieee.org/document/763310/
@@ -63,4 +61,4 @@ AI assistance was used to develop and explain simulation code. The author review
 
 ## Explicit input and output comparison
 
-`plots/signal_comparison.png` and `.pdf` show reference input x, disturbance d, adaptive filter output y, and final residual e in the same 50 ms final-second interval, with identical amplitude limits. Filter output y estimates disturbance; system output e = d-y is noise remaining after cancellation. Therefore attenuation compares d against e, not x against y. `signal_comparison.csv` exports mean-square power and RMS of all four signals over the full record and final second. New metric fields report before/after RMS, power, and percentage reductions in the final second. RMS reduction and power reduction are different measures; neither is perceived loudness reduction.
+`plots/signal_comparison.png` and `.pdf` show reference input x, disturbance d, adaptive filter output y, and final residual e in the same 50 ms final-second interval, with identical amplitude limits. Filter output y estimates disturbance; system output e = d-y is noise remaining after cancellation. Therefore attenuation compares d against e, not x against y. `signal_comparison.csv` exports mean-square power and RMS of all four signals over the full record and final second. Metric fields report before/after RMS, power, and percentage reductions in the final second. RMS reduction and power reduction are different measures; neither is perceived loudness reduction.
